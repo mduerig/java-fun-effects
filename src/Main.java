@@ -6,7 +6,7 @@ import java.util.function.Supplier;
 
 // A simple DSL
 interface Console<T>{
-    T accept(Visitor visitor);git
+    T accept(Visitor visitor);
 
     // andThen corresponds to bind / flatMap of a monad
     <S> Console<S> andThen(Function<T, Console<S>> f);
